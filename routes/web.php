@@ -59,6 +59,7 @@ Route::group(['prefix' => 'account', 'middleware' => 'prevent.back'], function (
         Route::get('donateForm', [DonorController::class, 'donateForm'])->name('account.donateForm');
         Route::post('processDonate', [DonorController::class, 'processDonate'])->name('account.processDonate');
         Route::get('getBloodPost', [DonorController::class, 'getBloodPost'])->name('account.getBloodPost');
+        Route::get('help', [DonorController::class, 'needhelp'])->name('account.help');
 
         // Dashboard & Logout
         Route::get('dashboard', [DashboardController::class, 'index'])->name('account.dashboard');

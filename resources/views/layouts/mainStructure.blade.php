@@ -136,6 +136,16 @@
         text-align: center;
     }
 
+    @media (max-width: 768px) {
+      .profile-dropdown.active {
+        top: -30px;
+        left: 40px;
+      }
+      .profile-dropdown {
+        min-width: 100px;
+        min-height: 40px;
+      }
+    }
 
 
       /*  Ancers Navigation */
@@ -731,8 +741,8 @@
         .hero {
           min-height: 80vh;
         }
-        .nav-links {
-          display: none;
+        .nav-link {
+          color: var(--dark-space);
         }
         .donate-with-hemosphere {
           grid-template-columns: 1fr;

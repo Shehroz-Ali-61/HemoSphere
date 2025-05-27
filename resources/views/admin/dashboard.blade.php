@@ -1267,15 +1267,15 @@
         <!-- Quick Stats -->
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value">1,234</div>
+                <div class="stat-value">7</div>
                 <div class="stat-label">Total Donors</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">567</div>
-                <div class="stat-label">Active Requests</div>
+                <div class="stat-value">3</div>
+                <div class="stat-label">Active</div> <!--Active Requests0-->
             </div>
             <div class="stat-card">
-                <div class="stat-value">89%</div>
+                <div class="stat-value">25%</div>
                 <div class="stat-label">Inventory Level</div>
             </div>
         </div>
@@ -1293,10 +1293,10 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>John Doe</td>
+                    <td>Abubakar</td>
                     <td>O+</td>
                     <td>2024-03-15</td>
-                    <td>Completed</td>
+                   
                 </tr>
                 <!-- Add more rows -->
             </tbody>

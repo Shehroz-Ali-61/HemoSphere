@@ -834,12 +834,12 @@
             <img src="{{ asset('images/logo-transparent.png') }}" alt="HemoSphere Logo" style="width: 35px; height: 35px;">
             HemoSphere Admin
         </div>
-        <nav class="admin-nav">
+        {{-- <nav class="admin-nav">
             <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
             <a href="#"><i class="fas fa-users"></i> Users</a>
             <a href="#"><i class="fas fa-tint"></i> Donors</a>
             <a href="{{ route('admin.logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
-        </nav>
+        </nav> --}}
     </header>
 
     <main class="admin-main">

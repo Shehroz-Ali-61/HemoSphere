@@ -15,6 +15,12 @@ class DonorController extends Controller
         return view('donateBlood');
     }
 
+     public function needhelp()
+    {
+        return view('help');
+    }
+
+
     public function processDonate(Request $request)
     {
         // Validate the request
@@ -67,6 +73,8 @@ class DonorController extends Controller
         return redirect()->back()->with('success', 'Thank you for joining our donor network!');
     }
 
+    
+
     public function getBloodPost(Request $request)
     {
         try {
@@ -105,5 +113,6 @@ class DonorController extends Controller
             return redirect()->back()->with('error', 'Could not retrieve donor data. Please try again later.');
         }
     }
+   
 
 }

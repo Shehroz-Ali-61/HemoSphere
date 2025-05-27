@@ -1002,10 +1002,12 @@
 <body>
   <!-- HEADER / NAVIGATION -->
   <header>
-    <div class="logo">
+    <a href="#">
+      <div class="logo">
       <img src="{{ asset('images/logo-transparent.png') }}" alt="Laravel Logo">
-      HemoSphere
+      HemoSphere 
     </div>
+    </a>
     <nav class="nav-links">
       <a href="{{ route('account.login') }}">Login</a>
       <a href="{{ route('account.register') }}" class="emergency-btn">Register</a>

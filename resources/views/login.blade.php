@@ -193,7 +193,7 @@
       @endif
 
       @if(Session::has('error'))
-      <div class="alert alert-danger">{{ Session::get('error') }}"></div>
+      <div class="alert alert-danger" id="alert-danger">{{ Session::get('error') }}"></div>
       @endif
 
       <button type="submit" class="login-btn">
@@ -240,6 +240,13 @@
     this.classList.toggle('fa-eye');
     this.classList.toggle('fa-eye-slash');
   });
+
+  let alertDanger = document.querySelector('#alert-danger');
+  alertDanger.style.color = 'red';
+  password.addEventListener('focus', function() {
+    alertDanger.style.display = 'none';
+  })
+
 </script>
 
 </html>

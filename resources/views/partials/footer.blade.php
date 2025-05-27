@@ -5,12 +5,12 @@
         <h3 class="footer-heading">Blood Connect</h3>
         <p>Join our mission to save lives through blood donation</p>
         <div class="social-links">
-          <a href="#" class="social-icon"
+          <a href="https://www.facebook.com/rajpout829/" class="social-icon"
             ><i class="fab fa-facebook-f"></i
           ></a>
           <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"
+          <a href="https://www.instagram.com/shehroz_ali4/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/shehroz-ali-501605272/" class="social-icon"
             ><i class="fab fa-linkedin-in"></i
           ></a>
         </div>
