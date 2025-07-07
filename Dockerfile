@@ -28,8 +28,8 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 # Expose port required by Render
-EXPOSE 3306
+EXPOSE 10000
 
 # Run Laravel development server
-CMD php artisan serve --host=127.0.0.1 --port=3306
+CMD php artisan serve --host=0.0.0.0 --port=10000
 
