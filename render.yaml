@@ -1,0 +1,51 @@
+services:
+  - type: web
+    name: HemoSphere
+    runtime: php
+    buildCommand: ./build.sh
+    startCommand: php artisan serve --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APP_ENV
+        value: local
+      - key: APP_KEY
+        value: base64:h0QX68tKSdWd9i7JlH380NYozT3Rw3TmrlrLnyN36Ks=
+      - key: APP_URL
+        value: http://hemosphere.com/
+      - key: APP_DEBUG
+        value: true
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        value: 127.0.0.1
+      - key: DB_PORT
+        value: 3306
+      - key: DB_DATABASE
+        value: integrated
+      - key: DB_USERNAME
+        value: root
+      - key: DB_PASSWORD
+        value: ""
+      - key: MAIL_MAILER
+        value: smtp
+      - key: MAIL_HOST
+        value: smtp.gmail.com
+      - key: MAIL_PORT
+        value: 587
+      - key: MAIL_USERNAME
+        value: ironspider714@gmail.com
+      - key: MAIL_PASSWORD
+        value: qdawlvwqlqfiprna
+      - key: MAIL_ENCRYPTION
+        value: tls
+      - key: MAIL_FROM_ADDRESS
+        value: ironspider714@gmail.com
+      - key: MAIL_FROM_NAME
+        value: Laravel
+      - key: PUSHER_APP_ID
+        value: 1968859
+      - key: PUSHER_APP_KEY
+        value: 7762c9e80e20d9d503d6
+      - key: PUSHER_APP_SECRET
+        value: 1c90d5f59aacdf892550
+      - key: PUSHER_APP_CLUSTER
+        value: ap2
