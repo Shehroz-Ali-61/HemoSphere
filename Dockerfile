@@ -24,8 +24,12 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Copy app code
 COPY . .
 
+# ✅ Install Laravel dependencies
+RUN composer install --no-dev --optimize-autoloader
+
 # Expose port required by Render
 EXPOSE 10000
 
-# Run Laravel server
+# Run Laravel development server
 CMD php artisan serve --host=0.0.0.0 --port=10000
+
